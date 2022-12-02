@@ -1,0 +1,31 @@
+.footer {
+    height:170px;
+    background-color: #000000;
+    width: 100%;
+    
+
+    &__block {
+
+        display:flex;
+        justify-content: center;
+
+    }
+
+    &__content {
+
+        margin-top:50px;
+         
+    }
+
+    &__logo{
+        width:90px;
+        height:30px;
+        margin-left:70px;
+    }
+
+    &__p {
+        color:white;
+        padding-top:30px;
+    }
+    
+}

@@ -1,6 +1,16 @@
+import styles from '../styles/pages/Home.module.scss'
+import Banner from '../components/Banner'
+
 function Home() {
+
     return (
-        <h1>Home page 🏘️ </h1>
+
+        <div className={styles.body}>
+            <Banner />
+
+
+        </div>
+
     )
 }
 
