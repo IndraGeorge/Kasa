@@ -11,34 +11,40 @@
         &__logo {
 
             height: 60px;
-            width: 30%;
+            margin:0;
+            width:30%;
     
         }
 
         &__nav{
                  
            display:flex;
-           justify-content: space-around;
+           margin:0;
+           
+        }
 
+        &__ul {
+
+            display:flex;
+            align-items: center;
         }
 
         &__link {
-                     
+
             font-size: 22px;
             text-align: right;
             color: $color-primary;
-            text-decoration: none;
             padding:25px;
-
-            &:hover {
-                text-decoration-line: underline;
-                                               
-            }
-       
+            display:flex;
+            justify-content: space-between;
+            text-decoration:none;
+            
         }
 
-      
+         
+} 
+
+.active {
+    text-decoration: underline;
 }
-
-
 

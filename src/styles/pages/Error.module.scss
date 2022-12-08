@@ -1,0 +1,35 @@
+@import'../Variables.scss';
+
+.body {
+    height:1024px;
+    margin-left:100px;
+    margin-right:40px;
+   
+}
+
+.error {
+
+    color:$color-primary;
+    text-align:center;
+    font-size:288px;
+    margin-top:120px;
+
+    &__text{
+        color:$color-primary;
+        text-align:center;
+        font-size:36px;
+        margin-top:40px;
+    }
+
+    &__link{
+        color:$color-primary;
+    }
+
+    &__return {
+        text-align:center;
+        font-size:18px;
+        margin-top:180px;
+        
+    }
+
+}
