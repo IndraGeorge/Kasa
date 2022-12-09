@@ -17,8 +17,8 @@ function Routing() {
                 <Route path='/logement/:id' element={<Logement />}></Route>
                 <Route path='/apropos' element={<About />}></Route>
                 <Route path='*' element={<PageNotFound />}></Route>
-
             </Routes>
+
             <Footer />
 
         </BrowserRouter>

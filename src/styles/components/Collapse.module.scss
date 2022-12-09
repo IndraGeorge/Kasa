@@ -1,5 +1,6 @@
 @import '../Variables.scss';
 
+// Collapse fermé
 
 .collapse{
 
@@ -13,17 +14,9 @@
 
     &__icon{
         
-        position:relative;
+        transition:all 400ms; 
+        
     }
-
-    &__icon::before{
-
-        content:'';
-        position:absolute;
-        transform:rotate(90deg);
-        transition:all 1s;     
-    }
-
     
     &__title{
         
@@ -42,21 +35,40 @@
         margin-top:-20px;
         border-radius: 0px 0px 5px 5px;
         visibility:hidden;
-        opacity:0;
         overflow: hidden;
         transition: all 2s ease-in;
         height:0;
-      
+        
     }
  
     &__text{
 
         color:$color-primary;
         padding:20px;
-        font-size:24px;
+        font-size:22px;
         
     }
 
      
 }
 
+
+// Collapse ouvert 
+
+.active__icon{
+    transform:rotate(-180deg);
+}
+
+.active__icon::before{
+
+    opacity:1;
+}
+
+
+.active__bloctext{
+
+    visibility:visible;
+    overflow: visible;
+    height:auto;
+
+}

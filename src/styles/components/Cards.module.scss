@@ -26,13 +26,15 @@
     &__name {
         font-size:18px;
         text-align:center;
-        margin-top:10px;
+        padding:8px;
         color:black
     }
 
     &:hover {
-        box-shadow: 2px 4px 8px 10px #D3D3D3;
+        
         transition:250ms;
+        transform:scale(1.03)
+        
     }
     
 }

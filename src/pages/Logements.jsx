@@ -1,7 +1,35 @@
-function Logements() {
+import React from 'react'
+import { useParams } from 'react-router-dom'
+import style from '../styles/pages/Logement.module.scss'
+import Data from '../data/logements.json'
+import Slideshow from '../components/Slideshow'
+
+function Logement() {
+
+    const { id } = useParams()
+    const accomodation = Data.find(data => data.id === id)
+    const { title, location, pictures } = accomodation
+
     return (
-        <h1> Listes des logements🏩 </h1>
+        <div className={style.body}>
+
+            <div className={style.slide}>
+                {pictures.map((picture, index) => (
+                    <Slideshow
+                        key={index}
+                        pictures={picture.pictures}
+
+                    />
+                ))}
+            </div>
+
+            <div className={style.container}>
+                <h1 className={style.container__title}>{title}</h1>
+                <h2 className={style.container__location}>{location}</h2>
+            </div>
+
+        </div>
     )
 }
 
-export default Logements 
+export default Logement

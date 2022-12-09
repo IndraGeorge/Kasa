@@ -22,6 +22,7 @@ function Home() {
                         {Data.map(logement => (
                             <LogementsCard
                                 key={logement.id}
+                                id={logement.id}
                                 title={logement.title}
                                 cover={logement.cover} />
                         ))}
@@ -36,22 +37,3 @@ function Home() {
 
 export default Home
 
-// import BannerImg from '../assets/banner-accueil.png'
-// import styles from '../styles/components/Banner.module.scss'
-
-// function Banner() {
-
-//     return (
-//         <div>
-
-//             <div className={styles.container}>
-//                 <h1 className={styles.container__h1}>Chez vous, partout et ailleurs</h1>
-//                 <img className={styles.container__img} src={BannerImg} alt='kaza'></img>
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default Banner
-
-//import styles from '../styles/components/Banner.module.scss'

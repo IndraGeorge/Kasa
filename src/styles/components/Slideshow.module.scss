@@ -1,0 +1,31 @@
+.container {
+
+    height:415px;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+
+    &__img{
+        position:absolute;
+        width:100%;
+        border-radius: 25px;
+    }
+
+}
+
+.arrows{
+    position:relative;
+    display:flex;
+    justify-content: space-between;
+    margin:20px;
+    top:150px;
+
+    &__arrowleft{
+
+        margin:0;
+    }
+
+    &__arrowright{
+
+        margin:0;
+    }
+}
