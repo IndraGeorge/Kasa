@@ -5,6 +5,8 @@ import Data from '../data/about.json'
 
 
 function Apropos() {
+
+
     return (
         <div className={style.body}>
 

@@ -1,4 +1,4 @@
-import styles from '../styles/pages/Home.module.scss'
+import style from '../styles/pages/Home.module.scss'
 import Data from '../data/logements.json'
 import LogementsCard from '../components/Cards'
 import BannerImg from '../assets/banner-accueil.png'
@@ -10,15 +10,15 @@ function Home() {
 
         <div>
 
-            <div className={styles.body}>
+            <div className={style.body}>
 
-                <div className={styles.banner}>
-                    <h1 className={styles.banner__h1}>Chez vous, partout et ailleurs</h1>
-                    <img className={styles.banner__img} src={BannerImg} alt='paysage'></img>
+                <div className={style.banner}>
+                    <h1 className={style.banner__h1}>Chez vous, partout et ailleurs</h1>
+                    <img className={style.banner__img} src={BannerImg} alt='paysage'></img>
                 </div>
 
-                <div className={styles.container}>
-                    <div className={styles.row}>
+                <div className={style.container}>
+                    <div className={style.row}>
                         {Data.map(logement => (
                             <LogementsCard
                                 key={logement.id}

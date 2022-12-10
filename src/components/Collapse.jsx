@@ -10,6 +10,7 @@ function Collapse({ title, content }) {
         setIsOpen(!isOpen)
     }
 
+
     // On change le nom de la classe si le collapse est ouvert 
     return (
         <div>

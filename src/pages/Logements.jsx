@@ -14,13 +14,11 @@ function Logement() {
         <div className={style.body}>
 
             <div className={style.slide}>
-                {pictures.map((picture, index) => (
-                    <Slideshow
-                        key={index}
-                        pictures={picture.pictures}
 
-                    />
-                ))}
+                <Slideshow
+                    props={pictures}
+                />
+
             </div>
 
             <div className={style.container}>

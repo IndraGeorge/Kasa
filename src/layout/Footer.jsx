@@ -7,7 +7,7 @@ import { faCopyright } from "@fortawesome/free-regular-svg-icons"
 
 function Footer() {
     return (
-        <div>
+        <footer>
 
             <div className={style.footer}>
                 <div className={style.footer__block} >
@@ -19,7 +19,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 

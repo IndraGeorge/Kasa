@@ -1,4 +1,4 @@
-import './styles/GlobalStyle.scss'
+import './styles/main.scss'
 import Routing from './Route'
 
 function App() {
