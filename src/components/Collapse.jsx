@@ -1,6 +1,7 @@
-import style from '../styles/components/Collapse.module.scss'
+//import style from '../styles/components/Collapse.module.scss'
 import Vector from '../assets/Vector.png'
 import { useState } from 'react'
+import style from '../styles/components/Collapse.module.scss'
 
 function Collapse({ title, content }) {
 
@@ -15,17 +16,17 @@ function Collapse({ title, content }) {
     return (
         <div>
 
-            <div className={`${style.collapse} ${isOpen && `${style.active}`}`}>
+            <div className={`${style.inactive} ${isOpen && `${style.active}`}`} onClick={handleToogle}>
 
-                <p className={style.collapse__title} onClick={handleToogle}>{title}</p>
-                <img className={`${style.collapse__icon} ${isOpen && `${style.active__icon}`}`}
-                    src={Vector} alt='a-propos' onClick={handleToogle} ></img>
+                <div className={style.inactive__title} >{title}</div>
+                <img className={`${style.inactive__icon} ${isOpen && `${style.active__icon}`}`}
+                    src={Vector} alt='accordéon' onClick={handleToogle} ></img>
 
             </div>
 
-            <div className={`${style.collapse__bloctext} ${isOpen && `${style.active__bloctext}`}`}>
+            <div className={`${style.inactive__bloctext} ${isOpen && `${style.active__bloctext}`}`}>
 
-                <p className={style.collapse__text}>{content}</p>
+                <div className={style.inactive__text}>{content}</div>
 
             </div>
 

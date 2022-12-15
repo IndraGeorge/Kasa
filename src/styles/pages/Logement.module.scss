@@ -1,16 +1,24 @@
 @import'../Variables.scss';
 
 .body{
-
-    height:auto;
     margin-left:100px;
     margin-right:40px;
     margin-top:40px;
+    height: auto;
+    min-height: 950px;
 }
 
 .container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:30px;   
+}
 
-    margin-top:30px;
+
+.info {
+
+    margin-left:0;
 
     &__title{
     font-size:36px;
@@ -20,7 +28,6 @@
     }
 
     &__location{
-
     font-size:18px;
     font-weight:500;
     text-align:left;
@@ -28,4 +35,69 @@
    
     }
 
+   
 }
+
+.bloc{
+    margin-right:0;
+    padding-bottom: 20px;
+}
+
+
+.hosts {
+
+    display: flex;
+    align-items: center;
+    
+    &__name{
+        color:$color-primary;
+        font-size:18px;
+        font-weight: 500;
+        width:93px;
+        height:52px;
+    }
+
+    &__img{
+        width: 64px;
+        height: 64px;
+        border-radius: 100%;
+    }
+
+}
+
+
+.collapse {
+
+    display:flex;
+    margin: -20px;
+    margin-top: 0;
+
+
+    &__title{
+        font-size:18px;
+        padding: 6px;
+        font-weight:400;
+        padding-left: 0;
+    }
+
+
+    &__content{
+        font-size:18px;
+        list-style-type: none;
+    }
+
+
+    &__description{
+        width:100%;
+        line-height: 170%;
+    }
+
+
+    &__equipment{
+        width:100%;
+        line-height:170%;
+    }
+
+}
+
+

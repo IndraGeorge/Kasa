@@ -1,4 +1,4 @@
-import style from '../styles/components/Footer.module.scss'
+import style from '../styles/layout/Footer.module.scss'
 import logo from '../assets/LOGO.png'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

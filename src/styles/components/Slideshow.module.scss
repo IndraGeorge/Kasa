@@ -1,10 +1,15 @@
+.carrousel{
+
+    height:420px;
+    overflow: hidden;
+}
+
 .container {
 
     height:415px;
     background-color: #f5f5f5;
     border-radius: 25px;
     position:relative;
-    overflow:hidden;
     transition: opacity ease-in-out 400ms;
    
     &__img{
@@ -32,10 +37,22 @@
     &__arrowleft{
 
         margin:0;
+        cursor: pointer;
     }
 
     &__arrowright{
 
         margin:0;
+        cursor: pointer;
     }
+}
+
+.bulletpoint{
+
+    position: relative;
+    bottom: 160px;
+    font-size: 18px;
+    text-align:center;
+    color: white;
+
 }

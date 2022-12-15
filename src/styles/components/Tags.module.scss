@@ -1,0 +1,23 @@
+@import '../variables';
+
+.tags{
+    display:flex;
+    align-items: center;
+    margin-top:15px;
+    width:600px;
+    margin-left: 0;
+
+
+    &__names{
+
+        background-color: $color-primary;
+        border-radius: 10px;
+        color:white;
+        font-size: 14px;
+        padding:3.5px;
+        width: 32%;
+        text-align: center;
+        margin: 0 15px 0px 0px;
+    }
+
+}

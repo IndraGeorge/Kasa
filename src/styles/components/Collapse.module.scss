@@ -1,8 +1,9 @@
 @import '../Variables.scss';
 
+
 // Collapse fermé
 
-.collapse{
+.inactive{
 
     margin:20px;
     background-color: $color-primary;
@@ -12,11 +13,6 @@
     cursor: pointer;
     border-radius:5px;
 
-    &__icon{
-        
-        transition:all 400ms; 
-        
-    }
     
     &__title{
         
@@ -24,7 +20,8 @@
         width:100%;
         color:white;
         text-align:left;
-                         
+        padding-left:10px;
+                
     }
 
 
@@ -42,11 +39,9 @@
     }
  
     &__text{
-
         color:$color-primary;
         padding:20px;
-        font-size:22px;
-        
+        font-size:24px;     
     }
 
      
@@ -59,10 +54,6 @@
     transform:rotate(180deg);
 }
 
-.active__icon::before{
-
-    opacity:1;
-}
 
 
 .active__bloctext{
@@ -70,5 +61,4 @@
     visibility:visible;
     overflow: visible;
     height:auto;
-
 }

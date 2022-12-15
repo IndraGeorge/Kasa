@@ -8,17 +8,40 @@ function Slideshow({ props }) {
 
     const [slideIndex, setSlideIndex] = useState(0)
 
-    //const lenght = props.lenght
+    const slideImg = props.length
 
+    // Si l'utilisateur se trouve à la dernière image,alors on affiche la première image
     const next = () => {
 
-        setSlideIndex(slideIndex)
-        console.log(slideIndex)
+        if (slideIndex === slideImg - 1) {
+
+            setSlideIndex(0)
+
+        } else {
+
+            setSlideIndex(slideIndex + 1)
+
+        }
+
+    }
+
+    // Si l'utilisateur se trouve à la première image,alors on affiche la dernière image
+    const prev = () => {
+
+        if (slideIndex === 0) {
+
+            setSlideIndex(slideImg - 1)
+
+        } else {
+
+            setSlideIndex(slideIndex - 1)
+        }
+
     }
 
     return (
 
-        <div>
+        <div className={style.carrousel}>
 
             {props.map((data, index) => (
 
@@ -29,14 +52,30 @@ function Slideshow({ props }) {
                             className={style.container__img}
                             src={data} alt='kaza' />
                     }
+
                 </div>
 
             ))}
 
-            <div className={style.arrows}>
-                <img className={style.arrows__arrowleft} onClick={next} src={arrowleft} alt="flèche"></img>
-                <img className={style.arrows__arrowright} onClick={next} src={arrowright} alt="flèche"></img>
-            </div>
+            {slideImg > 1 ? (
+
+                <div className={style.arrows}>
+                    <img className={style.arrows__arrowleft} onClick={prev} src={arrowleft} alt="flèche"></img>
+                    <img className={style.arrows__arrowright} onClick={next} src={arrowright} alt="flèche"></img>
+                </div>
+
+            ) : null
+            }
+
+            {slideImg > 1 ? (
+
+                <div className={style.bulletpoint}>
+                    {slideIndex + 1}/{slideImg}
+
+                </div>
+
+            ) : null
+            }
 
         </div>
 
@@ -46,3 +85,4 @@ function Slideshow({ props }) {
 
 
 export default Slideshow
+
