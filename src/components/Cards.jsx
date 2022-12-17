@@ -5,13 +5,13 @@ function LogementsCard({ title, cover, id }) {
 
     return (
 
-        <div>
+        <div className={style.container}>
             <Link className={style.link} to={`/logement/${id}`}>
                 <div className={style.card} >
-                    <img className={style.card__img} src={cover} alt='kasa'></img>
-                    <div>
-                        <h2 className={style.card__name}>{title}</h2>
-                    </div>
+                    <img className={style.card__img} src={cover} alt='logements'></img>
+
+                    <h2 className={style.card__name}>{title}</h2>
+
                 </div>
             </Link>
 

@@ -1,7 +1,7 @@
-//import style from '../styles/components/Collapse.module.scss'
 import Vector from '../assets/Vector.png'
 import { useState } from 'react'
 import style from '../styles/components/Collapse.module.scss'
+
 
 function Collapse({ title, content }) {
 

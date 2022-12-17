@@ -5,7 +5,7 @@
 }
 
 .card {
-    width:323px;
+    width:340px;
     height:340px;
     background: $color-card;
     border-radius:10px;
@@ -25,17 +25,39 @@
 
     &__name {
         font-size:18px;
-        font-weight:500;
-        text-align:center;
+        font-weight:400;
         padding:8px;
-        color:black
+        margin-left: 4px;
+        color:white;
     }
 
-    &:hover {
-        
-        transition:250ms;
-        transform:scale(1.03)
-        
+
+    &:hover {   
+        transition: 250ms;
+        box-shadow: 0 0 11px rgba(33,33,33,.2); 
     }
     
+}
+
+// Breakpoint mobile
+@media screen and (max-width:768px){
+
+    .container{
+        margin:0;
+    }
+
+    .card{
+
+        width:100%;
+        height:255px;
+        margin-left: auto;
+    
+        &__img{
+
+            height: 190px;
+        }
+
+       
+    }
+
 }

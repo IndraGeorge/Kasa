@@ -2,9 +2,7 @@
 
 .body {
     height:1024px;
-    margin-left:100px;
-    margin-right:40px;
-   
+     
 }
 
 .error {
@@ -19,6 +17,7 @@
         text-align:center;
         font-size:36px;
         margin-top:40px;
+        font-weight: 500;
     }
 
     &__link{
@@ -29,7 +28,41 @@
         text-align:center;
         font-size:18px;
         margin-top:180px;
-        
+        font-weight:500;
     }
 
+}
+
+// Breakpoint tablette
+@media screen and (max-width:992px){
+
+    .error{
+
+        font-size:200px;
+        
+        &__text{
+            font-size:30px;
+        }
+    }
+
+}
+
+// Breakpoint mobile
+@media screen  and (max-width:768px) {
+
+    .error{
+
+        font-size:96px;
+
+        &__text{
+
+            font-size:18px;
+        }
+
+        &__return{
+
+            font-size:14px;
+        }
+    }
+    
 }

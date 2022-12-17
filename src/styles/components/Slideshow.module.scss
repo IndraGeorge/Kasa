@@ -34,17 +34,12 @@
     margin:20px;
     bottom:265px;
 
-    &__arrowleft{
+    &__arrow{
 
         margin:0;
         cursor: pointer;
     }
 
-    &__arrowright{
-
-        margin:0;
-        cursor: pointer;
-    }
 }
 
 .bulletpoint{
@@ -54,5 +49,46 @@
     font-size: 18px;
     text-align:center;
     color: white;
+
+}
+
+// Breakpoint mobile
+@media screen and (max-width:768px){
+
+    .body{
+
+        margin: 20px 20px 0px 20px;
+    }
+
+    .carrousel{
+
+        height:255px;
+    }
+
+    .container{
+        border-radius: 10px;
+        height:255px;
+
+        &__img{
+
+            border-radius: 10px;
+        }
+    }
+
+    .arrows{
+
+        bottom:160px;
+
+        &__arrow{
+            width:20px;
+            height:30px;
+        }
+    }
+
+    .bulletpoint{
+        
+        bottom:108px;
+        font-size: 14px;
+    }
 
 }

@@ -1,5 +1,6 @@
 import style from '../styles/pages/About.module.scss'
 import PictureBanner from '../assets/banner-apropos.png'
+import BannerMobile from '../assets/banner-apropos2.png'
 import Collapse from '../components/Collapse'
 import Data from '../data/about.json'
 
@@ -12,6 +13,7 @@ function Apropos() {
 
             <div className={style.banner}>
                 <img className={style.banner__img} src={PictureBanner} alt='montagne'></img>
+                <img className={style.banner__imgmobile} src={BannerMobile} alt='montagne'></img>
             </div>
 
             <div className={style.collapses}>

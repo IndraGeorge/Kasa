@@ -1,23 +1,37 @@
 @import '../variables';
 
 .tags{
-    display:flex;
-    align-items: center;
-    margin-top:15px;
-    width:600px;
-    margin-left: 0;
-
+  
+    margin-top:20px;
 
     &__names{
 
-        background-color: $color-primary;
+        background-color: #FF6060;
         border-radius: 10px;
-        color:white;
+        color: white;
         font-size: 14px;
-        padding:3.5px;
-        width: 32%;
+        padding: 5px 10px;
+        min-width: 115px;
         text-align: center;
-        margin: 0 15px 0px 0px;
+        margin: auto 10px;
+        display: inline-block;
+        margin-left:0;
+    }
+
+}
+
+// Breakpoint mobile
+@media screen and (max-width:768px){
+
+    .tags{
+        display:inline-flex;
+        flex-wrap: wrap;
+        gap:12px 0;
+
+        &__names{
+            font-size: 10px;
+            border-radius:5px;
+        }
     }
 
 }

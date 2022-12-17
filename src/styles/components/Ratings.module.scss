@@ -12,3 +12,17 @@
 
     
 }
+
+@media screen and (max-width:768px){
+
+    .ratings{
+               
+        margin:0;
+    
+        &__note{
+            height:15px;
+            width:15px;
+        }
+
+    }
+}

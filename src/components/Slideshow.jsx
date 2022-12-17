@@ -60,8 +60,8 @@ function Slideshow({ props }) {
             {slideImg > 1 ? (
 
                 <div className={style.arrows}>
-                    <img className={style.arrows__arrowleft} onClick={prev} src={arrowleft} alt="flèche"></img>
-                    <img className={style.arrows__arrowright} onClick={next} src={arrowright} alt="flèche"></img>
+                    <img className={style.arrows__arrow} onClick={prev} src={arrowleft} alt="flèche"></img>
+                    <img className={style.arrows__arrow} onClick={next} src={arrowright} alt="flèche"></img>
                 </div>
 
             ) : null

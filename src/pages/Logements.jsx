@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import style from '../styles/pages/Logement.module.scss'
 import Data from '../data/logements.json'
 import Slideshow from '../components/Slideshow'
@@ -12,11 +12,13 @@ function Logement() {
     // On récupère l'id dans l'url
     const { id } = useParams()
     // On récupère les informations correspondants à l'id
-    const accomodation = Data.find(data => data.id === id)
-    const { title, location, pictures, host, tags, rating, description, equipments } = accomodation
+    const details = Data.find(data => data.id === id)
+    const { title, location, pictures, host, tags, rating, description, equipments } = { ...details }
 
+    /* Si l'id est correct alors on affiche les détails du logement
+       sinon on reconduit l'utilisateur vers la page d'erreur*/
 
-    return (
+    return details ? (
         <div className={style.body}>
 
             <div className={style.slide}>
@@ -56,7 +58,7 @@ function Logement() {
 
                 <div className={style.collapse__equipment}>
                     <Collapse
-                        title={<h3 className={style.collapse__title} > Équipements </h3>}
+                        title={<h3 className={style.collapse__title}> Équipements </h3>}
                         content={equipments.map((equipment, index) =>
                             <li className={style.collapse__content} key={index}>{equipment}</li>
                         )}
@@ -67,7 +69,7 @@ function Logement() {
             </div>
 
         </div>
-    )
+    ) : <Navigate to="/PageNotFound" />
 }
 
 export default Logement
