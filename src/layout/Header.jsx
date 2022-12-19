@@ -11,7 +11,10 @@ function header() {
         <div>
 
             <div className={style.header}>
-                <img className={style.header__logo} src={logo} alt="kasa" ></img>
+
+                <NavLink to='/' className={style.header__logo} >
+                    <img className={style.header__img} src={logo} alt="kasa" ></img>
+                </NavLink>
 
                 <nav className={style.header__nav} >
 

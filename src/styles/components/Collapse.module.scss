@@ -63,6 +63,20 @@
     height:auto;
 }
 
+
+// Breakpoint tablette 
+@media screen and (max-width:992px){
+
+    .inactive__text{
+        font-size: 20px;
+    }
+
+    .inactive__title{
+        font-size: 20px;
+    }
+}
+
+
 // Breakpoint mobile
 @media screen and (max-width:768px){
 

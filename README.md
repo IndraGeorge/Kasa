@@ -1,3 +1,10 @@
+# Kasa
+
+Kasa est une entreprise qui est dans le métier de la location d'appartements entre particuliers depuis \
+près de 10 ans. \
+L'objectif est de démarrer le projet React et développer l'ensemble de l'application kasa, \
+les composants React, en suivant les maquettes Figma.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
