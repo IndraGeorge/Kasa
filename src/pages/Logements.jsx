@@ -21,11 +21,9 @@ function Logement() {
     return details ? (
         <div className={style.body}>
 
-            <div className={style.slide}>
-                <Slideshow
-                    props={pictures}
-                />
-            </div>
+            <Slideshow
+                props={pictures}
+            />
 
             <div className={style.container}>
 

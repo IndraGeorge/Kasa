@@ -14,7 +14,7 @@ function Collapse({ title, content }) {
 
     // On change le nom de la classe si le collapse est ouvert 
     return (
-        <div>
+        <>
 
             <div className={`${style.inactive} ${isOpen && `${style.active}`}`} onClick={handleToogle}>
 
@@ -30,7 +30,7 @@ function Collapse({ title, content }) {
 
             </div>
 
-        </div>
+        </>
     )
 }
 
