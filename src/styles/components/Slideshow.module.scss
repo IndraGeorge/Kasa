@@ -52,6 +52,27 @@
 
 }
 
+
+// Breakpoint tablette
+@media screen and (max-width:992px){
+
+    .arrows{
+
+       bottom:250px;
+
+        &__arrow{
+            width:35px;
+            height:60px;
+        }
+    }
+
+    .bulletpoint{
+        bottom: 136px
+    }
+
+}
+
+
 // Breakpoint mobile
 @media screen and (max-width:768px){
 
@@ -77,7 +98,7 @@
 
     .arrows{
 
-        bottom:160px;
+        bottom:150px;
 
         &__arrow{
             width:20px;
@@ -87,8 +108,7 @@
 
     .bulletpoint{
         
-        bottom:108px;
-        font-size: 14px;
+       display:none;
     }
 
 }

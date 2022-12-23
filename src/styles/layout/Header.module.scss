@@ -45,22 +45,38 @@
                
 } 
 
-.active {
-    text-decoration: underline;
+
+//Breakpoint tablette 
+@media screen and (max-width:992px){
+
+    .header__logo{
+
+        width: 190px;
+    }
+
+    .header__img{
+
+        width:100%;
+    }
+
+    .header__link{
+
+        font-size:18px;
+    }
+
 }
+
 
 // Breakpoint mobile
 @media screen and (max-width:768px){
 
-    .header__logo{
-      
+    .header__logo{      
         margin-left:20px;
         width:145px;
        
     }
 
     .header__img{
-
         height:47px;
         width:100%;
     }
