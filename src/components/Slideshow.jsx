@@ -1,4 +1,4 @@
-import style from '../styles/components/Slideshow.module.scss'
+import styles from '../styles/components/Slideshow.module.scss'
 import arrowleft from '../assets/arrow-left.png'
 import arrowright from '../assets/arrow-right.png'
 import { useState } from 'react'
@@ -41,16 +41,16 @@ function Slideshow({ props }) {
 
     return (
 
-        <div className={style.carrousel}>
+        <div className={styles.carrousel}>
 
             {props.map((data, index) => (
 
-                <div key={index} className={index === slideIndex ? `${style.container}` : ""}>
+                <div key={index} className={index === slideIndex ? `${styles.container}` : ""}>
 
                     {slideIndex === index &&
                         <img
-                            className={style.container__img}
-                            src={data} alt='kaza' />
+                            className={styles.container__img}
+                            src={data} alt='appartements' />
                     }
 
                 </div>
@@ -59,9 +59,9 @@ function Slideshow({ props }) {
 
             {slideImg > 1 ? (
 
-                <div className={style.arrows}>
-                    <img className={style.arrows__arrow} onClick={prev} src={arrowleft} alt="flèche"></img>
-                    <img className={style.arrows__arrow} onClick={next} src={arrowright} alt="flèche"></img>
+                <div className={styles.arrows}>
+                    <img className={styles.arrows__arrow} onClick={prev} src={arrowleft} alt="flèche"></img>
+                    <img className={styles.arrows__arrow} onClick={next} src={arrowright} alt="flèche"></img>
                 </div>
 
             ) : null
@@ -69,7 +69,7 @@ function Slideshow({ props }) {
 
             {slideImg > 1 ? (
 
-                <div className={style.bulletpoint}>
+                <div className={styles.bulletpoint}>
                     {slideIndex + 1}/{slideImg}
 
                 </div>
@@ -82,7 +82,6 @@ function Slideshow({ props }) {
     )
 
 }
-
 
 export default Slideshow
 

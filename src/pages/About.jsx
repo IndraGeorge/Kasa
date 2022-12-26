@@ -1,22 +1,21 @@
-import style from '../styles/pages/About.module.scss'
+import styles from '../styles/pages/About.module.scss'
 import PictureBanner from '../assets/banner-apropos.png'
 import BannerMobile from '../assets/banner-apropos2.png'
 import Collapse from '../components/Collapse'
 import Data from '../data/about.json'
 
 
-function Apropos() {
-
+function About() {
 
     return (
-        <div className={style.body}>
+        <div className={styles.body}>
 
-            <div className={style.banner}>
-                <img className={style.banner__img} src={PictureBanner} alt='montagne'></img>
-                <img className={style.banner__imgmobile} src={BannerMobile} alt='montagne'></img>
+            <div className={styles.banner}>
+                <img className={styles.banner__img} src={PictureBanner} alt='montagne'></img>
+                <img className={styles.banner__imgmobile} src={BannerMobile} alt='montagne'></img>
             </div>
 
-            <div className={style.collapses}>
+            <div className={styles.collapses}>
 
                 {
                     Data.map((data, index) => (
@@ -34,5 +33,5 @@ function Apropos() {
     )
 }
 
-export default Apropos
+export default About
 

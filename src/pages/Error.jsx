@@ -1,7 +1,7 @@
 import styles from '../styles/pages/Error.module.scss'
 import { NavLink } from 'react-router-dom'
 
-function PageNotFound() {
+function Error() {
     return (
 
         <div className={styles.body}>
@@ -16,4 +16,4 @@ function PageNotFound() {
     )
 }
 
-export default PageNotFound
+export default Error

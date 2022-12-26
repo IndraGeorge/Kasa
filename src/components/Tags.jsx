@@ -1,10 +1,10 @@
-import style from '../styles/components/Tags.module.scss'
+import styles from '../styles/components/Tags.module.scss'
 
 function Tags({ props }) {
     return (
-        <div className={style.tags}>
+        <div className={styles.tags}>
             {props.map((tag, index) => (
-                <p key={index} className={style.tags__names} tag={tag}> {tag}</p>
+                <span key={index} className={styles.tags__names} tag={tag}> {tag}</span>
             ))}
         </div>
     )

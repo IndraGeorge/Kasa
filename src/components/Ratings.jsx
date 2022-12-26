@@ -1,6 +1,6 @@
 import star from '../assets/star.svg'
 import starColor from '../assets/star-color.svg'
-import style from '../styles/components/Ratings.module.scss'
+import styles from '../styles/components/Ratings.module.scss'
 
 
 function Ratings({ props }) {
@@ -12,15 +12,15 @@ function Ratings({ props }) {
 
     return (
 
-        <div className={style.ratings} >
+        <div className={styles.ratings} >
 
             {stars.map((item, index) =>
 
                 notes >= item ? (
-                    <img key={index.toString()} className={style.ratings__note} src={starColor} alt='étoiles' />
+                    <img key={index.toString()} className={styles.ratings__note} src={starColor} alt='étoiles' />
 
                 ) :
-                    <img key={index.toString()} className={style.ratings__note} src={star} alt='étoiles' />
+                    <img key={index.toString()} className={styles.ratings__note} src={star} alt='étoiles' />
 
             )}
 
