@@ -12,7 +12,7 @@ function Footer() {
 
             <div className={styles.footer__block} >
                 <div className={styles.footer__content}>
-                    <NavLink to='/'>
+                    <NavLink to='/Kasa'>
                         <img className={styles.footer__logo} src={logo} alt='logo'></img>
                     </NavLink>
                     <p className={styles.footer__p}><FontAwesomeIcon icon={faCopyright} /> 2020 Kasa.All rights reserved</p>
