@@ -1,5 +1,6 @@
-
 ![Cover](https://github.com/IndraGeorge/Kasa/blob/main/src/assets/LOGO.svg)
+
+https://indrageorge.github.io/Kasa/
 
 Kasa est une entreprise qui est dans le métier de la location d'appartements entre particuliers depuis \
 près de 10 ans. \

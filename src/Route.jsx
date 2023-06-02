@@ -13,7 +13,7 @@ function Routing() {
             <Header />
 
             <Routes>
-                <Route exact path='/' element={<Home />}></Route>
+                <Route exact path='/Kasa' element={<Home />}></Route>
                 <Route path='/logement/:id' element={<Logement />}></Route>
                 <Route path='/apropos' element={<About />}></Route>
                 <Route path='*' element={<Error />}></Route>
